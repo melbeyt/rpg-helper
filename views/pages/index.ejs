@@ -7,8 +7,8 @@
 <body>
 
   <% include ../partials/nav.ejs %>
-
-  <div class="container player-list">
+<div class="container-fluid">
+  <div class="container player-list col-md-3">
     <div class="DM-entry">
       DM:
       <div class="name-only-entry">
@@ -35,11 +35,9 @@
       </div>
     </div>
   </div>
-  <div class="container map">
-    <div class="map-grid" style="width: 80%; height: 95%; border: 1px black">
-      squares go here
-    </div>
-  </div>
+  <div class="container map col-md-9" style="border: 1px black">
 
+  </div>
+</div>
 </body>
 </html>
