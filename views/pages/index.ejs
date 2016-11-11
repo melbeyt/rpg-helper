@@ -36,8 +36,24 @@
     </div>
   </div>
   <div class="container map col-md-9" style="border: 1px black">
-
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button>Send</button>
+    </form>
   </div>
 </div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  var socket = io();
+  $('form').submit(function() {
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+
+  socket.on('chat message', function(msg) { 
+    $('#messages').append($('<li>').text(msg));
+  });
+</script>
 </body>
 </html>

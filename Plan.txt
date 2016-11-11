@@ -1,0 +1,9 @@
+Round 1 MVP:
+	- Responsive player list:
+		- Friends
+		- Enemies
+		- Indifferents
+	  + DM and spectators
+	- Adjustable map
+	- Players represented w/ colored letters
+	- Icons can be placed, moved, and removed
