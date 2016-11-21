@@ -1,0 +1,3 @@
+define({
+	msg: 'user disconnected'
+});
